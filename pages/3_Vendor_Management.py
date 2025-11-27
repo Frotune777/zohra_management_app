@@ -35,7 +35,7 @@ with v_tab1:
         df_suppliers,
         num_rows="dynamic",
         key="supplier_editor",
-        use_container_width=True
+        width="stretch"
     )
     
     if st.button("Save Changes (Suppliers)"):
@@ -135,7 +135,7 @@ with v_tab2:
                 "MarkupOperator1": st.column_config.SelectboxColumn(options=["+", "-", "*", "/"]),
                 "MarkupOperator2": st.column_config.SelectboxColumn(options=["+", "-", "*", "/"]),
             },
-            use_container_width=True,
+            width="stretch",
             key="markup_editor"
         )
         

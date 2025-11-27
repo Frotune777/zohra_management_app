@@ -21,6 +21,12 @@
   - Implemented modern CSS styling (Inter font, custom colors, card-like metrics).
   - Refactored to **multi-page app structure** with separate pages for each module.
   - Added comprehensive documentation in `docs/` folder.
+- **New Modules**:
+  - **Attendance Module**: Track employee attendance with bulk grid entry.
+  - **Sales & Expense Module**: Record daily sales and expenses with grid-based entry.
+  - **P&L Dashboard**: Comprehensive profit & loss view aggregating all data.
+- **Bug Fixes**:
+  - Fixed Streamlit deprecation warnings (`use_container_width` → `width`).
 
 
 ## v1.0.0

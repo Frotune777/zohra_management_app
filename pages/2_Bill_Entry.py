@@ -57,7 +57,7 @@ if selected_vendor:
                 "Vendor Rate": st.column_config.NumberColumn(min_value=0.0, step=1.0, format="₹%.2f"),
             },
             hide_index=True,
-            use_container_width=True,
+            width="stretch",
             key="bill_editor"
         )
         

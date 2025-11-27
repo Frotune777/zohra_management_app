@@ -4,8 +4,13 @@
 This application is a desktop tool built with Python and Tkinter for managing chicken rates, vendor details, and daily bill entries. It uses SQLite for data storage.
 
 ## Features
-- **Daily Rate Data Entry**: Input daily rates for Tandoor, Boiler, and Egg.
-- **Daily Bill Entry**: Record bills for vendors, calculate expected rates based on markup rules, and track variances.
+- **Daily Rate Entry**: Record market rates for Tandoor, Boiler, and Egg.
+- **Bill Entry**: Track daily purchases with automatic variance calculation.
+- **Vendor Management**: Manage suppliers and markup rules with data consistency.
+- **Dashboard**: Visualize rate trends and vendor dues.
+- **Attendance**: Track employee attendance with bulk grid entry.
+- **Sales & Expenses**: Record daily sales and expenses with category-wise tracking.
+- **P&L Dashboard**: Comprehensive profit & loss analysis.
 - **Vendor Management**: Add, update, and delete vendors. Manage markup rules for each vendor.
 - **Ledger**: Track payments and view net due balances for vendors.
 
@@ -30,7 +35,10 @@ management_app/
 │   ├── 1_Chicken_Rates.py
 │   ├── 2_Bill_Entry.py
 │   ├── 3_Vendor_Management.py
-│   └── 4_Chicken_Dashboard.py
+│   ├── 4_Chicken_Dashboard.py
+│   ├── 5_Daily_Sales_Expense.py
+│   ├── 6_Attendance.py
+│   └── 7_PnL_Dashboard.py
 ├── utils.py                # Shared utilities
 ├── chicken_db.py           # Database layer
 ├── docs/                   # Implementation plans
