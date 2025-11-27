@@ -2,6 +2,11 @@
 
 > **Purpose**: This file provides complete project context for LLMs to understand the entire system architecture, codebase, and functionality.
 
+# How to use this file (for tools & devs)
+
+- **Devs**: Read this once before big changes. Check the "Test Expectations" and "Critical Business Rules" sections before merging.
+- **LLMs / Agents**: Treat this document as the **source of truth**. Do not violate constraints or assumptions defined here.
+
 ---
 
 ## 🎯 Project Overview
@@ -73,6 +78,26 @@ management_app/
 9. **Month Length**: Default 30 days for salary calculations unless specified otherwise.
 
 10. **Transaction Integrity**: All multi-table updates must use database transactions with rollback on error.
+
+11. **Vendor Payment Sign Convention**:
+    - `TransactionType='Bill'` → Amount is **positive** (we owe vendor).
+    - `TransactionType='Payment'` → Amount is **negative** (we pay vendor).
+
+12. **Sales Total Integrity**:
+    - `Total` in `DailySales` must always = `DineIn + Takeaway + Online`.
+    - UI or code must recompute this if any channel value changes.
+
+---
+
+## 🧭 Change Governance
+
+- Any change to:
+  - Database schema
+  - Critical business rules
+  - P&L or salary formulas
+- **Must be reviewed** and approved by the product owner (Shakil) before implementation.
+
+**LLMs and automated tools must NOT modify these without explicit instruction.**
 
 ---
 
@@ -184,6 +209,14 @@ Net Profit = Total Sales - (Chicken Cost + Other Expenses + Staff Cost)
 
 ## 🔧 Core Functions (chicken_db.py)
 
+### chicken_db.py – Design Notes
+
+- Acts as the **single access layer** for the SQLite DB.
+- Prefer calling these functions from UI pages instead of writing raw SQL.
+- If you add new DB operations:
+  - Keep them small and focused.
+  - Add corresponding tests in `test_chicken_db.py`.
+
 ### Database Initialization
 - `initialize_db()` - Creates all tables, handles migrations
 
@@ -208,17 +241,27 @@ Net Profit = Total Sales - (Chicken Cost + Other Expenses + Staff Cost)
 
 ---
 
-## 📄 Module Descriptions
+## 📄 Module Descriptions with Extension Guidelines
 
 ### Home.py
 - Entry point with horizontal tab navigation
 - Loads pages dynamically using `exec()`
 - Custom CSS for dark theme
 
+**Extension Guidelines:**
+- **New pages**: Add to `pages/` directory, update tab list and exec() calls
+- **Navigation changes**: Modify tab definitions in `st.tabs()`
+- **Global styling**: Update CSS in markdown block or `utils.apply_styling()`
+
 ### 1_Chicken_Rates.py
 - Form for daily rate entry (Tandoor, Boiler, Egg)
 - Loads existing rates for editing
 - Saves to RawData table
+
+**Extension Guidelines:**
+- **New rate types**: Add column to `RawData` table, update form and save logic
+- **Validation rules**: Add in form submission block
+- **Rate history**: Modify `chicken_db.fetch_rate_history()` query
 
 ### 2_Bill_Entry.py
 - Vendor selection
@@ -227,6 +270,11 @@ Net Profit = Total Sales - (Chicken Cost + Other Expenses + Staff Cost)
 - Flags high-variance items
 - Updates BillEntries and VendorLedger
 
+**Extension Guidelines:**
+- **New variance thresholds**: Modify status calculation logic
+- **Additional fields**: Add columns to `BillEntries` table and update insert query
+- **Bulk import**: Add CSV upload feature before grid display
+
 ### 3_Vendor_Management.py
 - Vendor CRUD operations
 - Markup rule management (grid editor)
@@ -234,20 +282,41 @@ Net Profit = Total Sales - (Chicken Cost + Other Expenses + Staff Cost)
 - Payment recording
 - Due calculation
 
+**Extension Guidelines:**
+- **New vendor fields**: Add columns to `Suppliers` table, update form and save logic
+- **New markup fields**: Add columns to `Markups` table, update grid config
+- **Payment methods**: Add to `PreferredPaymentType` options
+- **Ledger filters**: Add date range or transaction type filters
+
 ### 4_Chicken_Dashboard.py
 - Rate history line chart
 - Vendor dues bar chart
 - Summary metrics
+
+**Extension Guidelines:**
+- **New charts**: Add using `st.line_chart()`, `st.bar_chart()`, or plotly
+- **Date range filters**: Add date inputs and modify queries
+- **Export features**: Add download buttons for chart data
 
 ### 5_Daily_Sales_Expense.py
 - Sales entry (3 channels: Dine-in, Takeaway, Online)
 - Expense entry (grid-based, categorized)
 - Summary view with date range filtering
 
+**Extension Guidelines:**
+- **New sales channels**: Add columns to `DailySales` table and update P&L aggregation in `pages/7_PnL_Dashboard.py`
+- **New expense categories**: No DB change needed; use free-text `Category` or define controlled list in SelectboxColumn config
+- **Payment tracking**: Add payment mode analysis charts
+
 ### 6_Attendance.py
 - Daily attendance grid (all employees)
 - Employee master management
 - Attendance reports
+
+**Extension Guidelines:**
+- **New attendance statuses**: Add to SelectboxColumn options (e.g., "Half Day", "Sick Leave")
+- **Shift management**: Add `Shift` column to `Attendance` table
+- **Leave balance**: Create new `LeaveBalance` table and tracking logic
 
 ### 7_PnL_Dashboard.py
 - Revenue calculation
@@ -255,11 +324,23 @@ Net Profit = Total Sales - (Chicken Cost + Other Expenses + Staff Cost)
 - Profit calculation
 - Visualizations (charts, trends)
 
+**Extension Guidelines:**
+- **P&L formula changes**: Update calculation logic in main query section
+- **New cost categories**: Add to cost breakdown DataFrame and chart
+- **Comparison periods**: Add year-over-year or month-over-month comparison
+- **Export to Excel**: Add `df.to_excel()` functionality
+
 ### 8_Salary_Advances.py
 - Advance recording
 - Salary calculation (with 28-day delay)
 - Payment history
 - Mark as paid functionality
+
+**Extension Guidelines:**
+- **Salary formula changes**: Modify calculation in "Calculate Salaries" button handler
+- **Deduction types**: Add new deduction tables (e.g., `Loans`, `Penalties`)
+- **Payment delay rule**: If changing 28-day rule, update `payment_date` calculation AND update tests
+- **Bonus/Incentives**: Add `Bonuses` table and include in gross salary calculation
 
 ---
 
@@ -307,7 +388,9 @@ if st.button("Save"):
 
 ---
 
-## 🔑 Key Business Rules
+## 🔑 Key Business Rules (Summary)
+
+For full details, see "Critical Business Rules" and "DO NOT CHANGE" sections above.
 
 1. **Markup Rules**: Support chained operations (Op1, Op2)
 2. **Variance Tracking**: Flag when |vendor_rate - expected_rate| > threshold
@@ -431,6 +514,7 @@ cursor.execute("""
 3. **Use transactions** for multi-table updates
 4. **Follow calculation formulas** exactly as documented
 5. **Maintain data integrity** – check foreign keys and unique constraints
+6. **Do NOT introduce new microservices, queues, or external systems.** All logic must stay within: Python + Streamlit + SQLite.
 
 **When generating code:**
 - Use `chicken_db.py` functions instead of direct SQL when available
@@ -500,144 +584,6 @@ cursor.execute("""
 
 ---
 
-## 📄 Module Descriptions with Extension Guidelines
-
-### Home.py
-- Entry point with horizontal tab navigation
-- Loads pages dynamically using `exec()`
-- Custom CSS for dark theme
-
-**Extension Guidelines:**
-- **New pages**: Add to `pages/` directory, update tab list and exec() calls
-- **Navigation changes**: Modify tab definitions in `st.tabs()`
-- **Global styling**: Update CSS in markdown block or `utils.apply_styling()`
-
-### 1_Chicken_Rates.py
-- Form for daily rate entry (Tandoor, Boiler, Egg)
-- Loads existing rates for editing
-- Saves to RawData table
-
-**Extension Guidelines:**
-- **New rate types**: Add column to `RawData` table, update form and save logic
-- **Validation rules**: Add in form submission block
-- **Rate history**: Modify `chicken_db.fetch_rate_history()` query
-
-### 2_Bill_Entry.py
-- Vendor selection
-- Grid-based item entry
-- Auto-calculates expected rates and variance
-- Flags high-variance items
-- Updates BillEntries and VendorLedger
-
-**Extension Guidelines:**
-- **New variance thresholds**: Modify status calculation logic
-- **Additional fields**: Add columns to `BillEntries` table and update insert query
-- **Bulk import**: Add CSV upload feature before grid display
-
-### 3_Vendor_Management.py
-- Vendor CRUD operations
-- Markup rule management (grid editor)
-- Vendor ledger view
-- Payment recording
-- Due calculation
-
-**Extension Guidelines:**
-- **New vendor fields**: Add columns to `Suppliers` table, update form and save logic
-- **New markup fields**: Add columns to `Markups` table, update grid config
-- **Payment methods**: Add to `PreferredPaymentType` options
-- **Ledger filters**: Add date range or transaction type filters
-
-### 4_Chicken_Dashboard.py
-- Rate history line chart
-- Vendor dues bar chart
-- Summary metrics
-
-**Extension Guidelines:**
-- **New charts**: Add using `st.line_chart()`, `st.bar_chart()`, or plotly
-- **Date range filters**: Add date inputs and modify queries
-- **Export features**: Add download buttons for chart data
-
-### 5_Daily_Sales_Expense.py
-- Sales entry (3 channels: Dine-in, Takeaway, Online)
-- Expense entry (grid-based, categorized)
-- Summary view with date range filtering
-
-**Extension Guidelines:**
-- **New sales channels**: Add columns to `DailySales` table and update P&L aggregation in `pages/7_PnL_Dashboard.py`
-- **New expense categories**: No DB change needed; use free-text `Category` or define controlled list in SelectboxColumn config
-- **Payment tracking**: Add payment mode analysis charts
-
-### 6_Attendance.py
-- Daily attendance grid (all employees)
-- Employee master management
-- Attendance reports
-
-**Extension Guidelines:**
-- **New attendance statuses**: Add to SelectboxColumn options (e.g., "Half Day", "Sick Leave")
-- **Shift management**: Add `Shift` column to `Attendance` table
-- **Leave balance**: Create new `LeaveBalance` table and tracking logic
-
-### 7_PnL_Dashboard.py
-- Revenue calculation
-- Cost breakdown (Chicken, Staff, Other)
-- Profit calculation
-- Visualizations (charts, trends)
-
-**Extension Guidelines:**
-- **P&L formula changes**: Update calculation logic in main query section
-- **New cost categories**: Add to cost breakdown DataFrame and chart
-- **Comparison periods**: Add year-over-year or month-over-month comparison
-- **Export to Excel**: Add `df.to_excel()` functionality
-
-### 8_Salary_Advances.py
-- Advance recording
-- Salary calculation (with 28-day delay)
-- Payment history
-- Mark as paid functionality
-
-**Extension Guidelines:**
-- **Salary formula changes**: Modify calculation in "Calculate Salaries" button handler
-- **Deduction types**: Add new deduction tables (e.g., `Loans`, `Penalties`)
-- **Payment delay rule**: If changing 28-day rule, update `payment_date` calculation AND update tests
-- **Bonus/Incentives**: Add `Bonuses` table and include in gross salary calculation
-
----
-
-## 💡 Understanding the Project
-
-**For LLMs**: This project is a complete restaurant management system with:
-- **8 interconnected modules** for different business functions
-- **11 database tables** with proper relationships
-- **Complex business logic** (rate calculations, variance tracking, salary rules)
-- **Clean architecture** (separation of UI, business logic, data)
-- **Production-ready** with tests and documentation
-
-**Key Complexity Areas**:
-1. **Rate Calculation**: Dynamic markup rules with chained operations
-2. **Variance Tracking**: Comparing vendor rates against calculated expected rates
-3. **Salary Calculation**: 28-day payment delay with advance deductions
-4. **P&L Calculation**: Aggregating data from multiple sources
-
-**Code Quality**:
-- Modular design
-- Comprehensive testing
-- Detailed documentation
-- Error handling
-- Transaction management for data integrity
-
----
-
-## 🔗 Quick Reference
-
-- **Entry Point**: `Home.py`
-- **Database Layer**: `chicken_db.py`
-- **Database File**: `chicken_tracker.db`
-- **Test Suite**: `tests/run_tests.py`
-- **Main Docs**: `README.md`
-- **API Docs**: `docs/API_REFERENCE.md`
-
----
-
 **Last Updated**: 2025-11-28  
-**Version**: 2.0  
+**Version**: 2.1  
 **Status**: Production Ready
