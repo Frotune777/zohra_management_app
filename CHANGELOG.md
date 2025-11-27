@@ -27,6 +27,10 @@
   - **P&L Dashboard**: Comprehensive profit & loss view aggregating all data.
 - **Bug Fixes**:
   - Fixed Streamlit deprecation warnings (`use_container_width` → `width`).
+- **Phase 3 Enhancements**:
+  - Converted to **horizontal tab navigation** (removed sidebar).
+  - Improved **dark theme visibility** with better color contrast.
+  - Implemented **Salary & Advances module** with 28-day payment delay rule.
 
 
 ## v1.0.0
