@@ -65,7 +65,7 @@ with tab1:
             col1, col2 = st.columns(2)
             
             with col1:
-                advance_date = st.date_input("Date", datetime.now())
+                advance_date = st.date_input("Date", datetime.now(), key="advance_date_input")
                 employee_id = st.selectbox(
                     "Employee",
                     options=df_employees["EmployeeID"].tolist(),
@@ -74,6 +74,7 @@ with tab1:
             
             with col2:
                 amount = st.number_input("Amount", min_value=0.0, step=100.0)
+                payment_mode = st.selectbox("Payment Mode", ["Cash", "Bank", "UPI"], key="advance_payment_mode")
                 reason = st.text_input("Reason")
             
             if st.form_submit_button("Record Advance", type="primary"):
@@ -81,37 +82,64 @@ with tab1:
                     conn = utils.get_db_connection()
                     cursor = conn.cursor()
                     cursor.execute("""
-                        INSERT INTO SalaryAdvances (Date, EmployeeID, Amount, Reason)
-                        VALUES (?, ?, ?, ?)
-                    """, (advance_date.strftime("%Y-%m-%d"), employee_id, amount, reason))
+                        INSERT INTO SalaryAdvances (Date, EmployeeID, Amount, Reason, PaymentMode)
+                        VALUES (?, ?, ?, ?, ?)
+                    """, (advance_date.strftime("%Y-%m-%d"), employee_id, amount, reason, payment_mode))
                     conn.commit()
                     conn.close()
                     st.success("Advance recorded successfully!")
                 except Exception as e:
                     st.error(f"Error: {e}")
     
-    # Show recent advances
     st.markdown("### Recent Advances")
     conn = utils.get_db_connection()
-    df_advances = pd.read_sql_query("""
-        SELECT a.Date, e.Name, a.Amount, a.Reason
+    df_advances_full = pd.read_sql_query("""
+        SELECT a.Date, a.EmployeeID, e.Name, a.Amount, a.PaymentMode, a.Reason
         FROM SalaryAdvances a
         JOIN Employees e ON a.EmployeeID = e.EmployeeID
         ORDER BY a.Date DESC
-        LIMIT 20
     """, conn)
-    conn.close()
-    
-    if not df_advances.empty:
-        st.dataframe(df_advances, hide_index=True, width="stretch")
+
+    if not df_employees.empty:
+        # Calculate Running Balance
+        advances_agg = df_advances_full.groupby("EmployeeID")['Amount'].sum()
+        
+        # Fetch recoveries (from SalaryPayments)
+        recoveries_df = pd.read_sql_query("SELECT EmployeeID, TotalAdvances FROM SalaryPayments", conn)
+        recoveries_agg = recoveries_df.groupby("EmployeeID")['TotalAdvances'].sum()
+        
+        # Merge for balance
+        balance_data = []
+        for _, emp in df_employees.iterrows():
+            eid = emp['EmployeeID']
+            total_adv = advances_agg.get(eid, 0.0)
+            total_rec = recoveries_agg.get(eid, 0.0)
+            balance = total_adv - total_rec
+            balance_data.append({
+                "Employee": emp['Name'],
+                "Total Taken": f"₹{total_adv:,.2f}",
+                "Total Repaid": f"₹{total_rec:,.2f}",
+                "Current Balance": f"₹{balance:,.2f}"
+            })
+        
+        st.dataframe(pd.DataFrame(balance_data), hide_index=True, width="stretch")
+    else:
+        st.info("No active employees to calculate advance balance.")
+
+    st.markdown("### Recent Transactions")
+    if not df_advances_full.empty:
+        # Display only the relevant columns for recent transactions
+        df_recent_transactions = df_advances_full[['Date', 'Name', 'Amount', 'PaymentMode', 'Reason']].head(20)
+        st.dataframe(df_recent_transactions, hide_index=True, width="stretch")
     else:
         st.info("No advances recorded yet.")
+    conn.close()
 
 with tab2:
     st.subheader("Calculate Salary")
     
     # Month selector
-    salary_month = st.date_input("Salary Month", datetime.now().replace(day=1))
+    salary_month = st.date_input("Salary Month", datetime.now().replace(day=1), key="salary_calc_month")
     month_str = salary_month.strftime("%Y-%m")
     
     # Calculate button

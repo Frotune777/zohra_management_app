@@ -83,12 +83,129 @@ def initialize_db():
             TransactionType TEXT NOT NULL,
             Amount REAL NOT NULL,
             Details TEXT,
+            PaymentMode TEXT, -- 'Cash', 'Bank', 'UPI', etc.
             FOREIGN KEY (SupplierName) REFERENCES Suppliers(SupplierName)
         )
     """)
+    
+    # Check if PaymentMode column exists (for existing DBs)
+    cursor.execute("PRAGMA table_info(VendorLedger)")
+    columns = [info[1] for info in cursor.fetchall()]
+    if 'PaymentMode' not in columns:
+        cursor.execute("ALTER TABLE VendorLedger ADD COLUMN PaymentMode TEXT")
 
-    conn.commit()
-    conn.close()
+    # 6. DailySales Table
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS DailySales (
+            ID INTEGER PRIMARY KEY,
+            Date TEXT UNIQUE NOT NULL,
+            DineIn REAL DEFAULT 0,
+            Takeaway REAL DEFAULT 0,
+            Online REAL DEFAULT 0,
+            Total REAL NOT NULL,
+            CashAmount REAL DEFAULT 0,
+            UPIAmount REAL DEFAULT 0,
+            CardAmount REAL DEFAULT 0
+        )
+    """)
+    
+    # Check if new columns exist (for existing DBs)
+    cursor.execute("PRAGMA table_info(DailySales)")
+    columns = [info[1] for info in cursor.fetchall()]
+    if 'CashAmount' not in columns:
+        cursor.execute("ALTER TABLE DailySales ADD COLUMN CashAmount REAL DEFAULT 0")
+    if 'UPIAmount' not in columns:
+        cursor.execute("ALTER TABLE DailySales ADD COLUMN UPIAmount REAL DEFAULT 0")
+    if 'CardAmount' not in columns:
+        cursor.execute("ALTER TABLE DailySales ADD COLUMN CardAmount REAL DEFAULT 0")
+
+    # 7. Expenses Table
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS Expenses (
+            ID INTEGER PRIMARY KEY,
+            Date TEXT NOT NULL,
+            Category TEXT NOT NULL,
+            Amount REAL NOT NULL,
+            Description TEXT,
+            PaymentMode TEXT -- 'Cash', 'Bank', 'UPI'
+        )
+    """)
+
+    # 8. Employees Table
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS Employees (
+            EmployeeID INTEGER PRIMARY KEY,
+            Name TEXT NOT NULL,
+            Role TEXT NOT NULL,
+            Department TEXT,
+            MonthlySalary REAL NOT NULL,
+            DateOfJoining TEXT,
+            Status TEXT DEFAULT 'Active'
+        )
+    """)
+
+    # 9. Attendance Table
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS Attendance (
+            ID INTEGER PRIMARY KEY,
+            Date TEXT NOT NULL,
+            EmployeeID INTEGER NOT NULL,
+            Status TEXT NOT NULL,
+            OTHours REAL DEFAULT 0,
+            Remarks TEXT,
+            FOREIGN KEY (EmployeeID) REFERENCES Employees(EmployeeID),
+            UNIQUE (Date, EmployeeID)
+        )
+    """)
+
+    # 10. SalaryAdvances Table
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS SalaryAdvances (
+            ID INTEGER PRIMARY KEY,
+            Date TEXT NOT NULL,
+            EmployeeID INTEGER NOT NULL,
+            Amount REAL NOT NULL,
+            Reason TEXT,
+            PaymentMode TEXT DEFAULT 'Cash',
+            FOREIGN KEY (EmployeeID) REFERENCES Employees(EmployeeID)
+        )
+    """)
+    
+    # Check if PaymentMode column exists (for existing DBs)
+    cursor.execute("PRAGMA table_info(SalaryAdvances)")
+    columns = [info[1] for info in cursor.fetchall()]
+    if 'PaymentMode' not in columns:
+        cursor.execute("ALTER TABLE SalaryAdvances ADD COLUMN PaymentMode TEXT DEFAULT 'Cash'")
+
+    # 11. SalaryPayments Table
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS SalaryPayments (
+            ID INTEGER PRIMARY KEY,
+            SalaryMonth TEXT NOT NULL, -- Format: YYYY-MM
+            EmployeeID INTEGER NOT NULL,
+            GrossSalary REAL NOT NULL,
+            TotalAdvances REAL NOT NULL,
+            NetPayable REAL NOT NULL,
+            PaymentDate TEXT,
+            Status TEXT DEFAULT 'Pending',
+            FOREIGN KEY (EmployeeID) REFERENCES Employees(EmployeeID),
+            UNIQUE (SalaryMonth, EmployeeID)
+        )
+    """)
+    
+    # 12. CashClosing Table (NEW)
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS CashClosing (
+            Date TEXT PRIMARY KEY,
+            OpeningCash REAL DEFAULT 0,
+            TotalCashIn REAL DEFAULT 0,
+            TotalCashOut REAL DEFAULT 0,
+            ExpectedClosing REAL DEFAULT 0,
+            ActualClosing REAL DEFAULT 0,
+            Difference REAL DEFAULT 0,
+            Remarks TEXT
+        )
+    """)
 
 # --- Vendor/Supplier Utilities ---
 
