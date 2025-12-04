@@ -1,0 +1,632 @@
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 327, in load_vendor_list
+    self.update_app_data_callback(self.suppliers) # Notify main app to update comboboxes
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 55, in _update_app_data
+    self.vendor_manager.load_vendor_list() # Re-runs fetch_suppliers_and_items internally
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/vendor_management.py", line 325, in load_vendor_list
+    self.vendor_tree.insert('', tk.END, iid=supplier_id, values=display_values)
+  File "/usr/lib/python3.12/tkinter/ttk.py", line 1334, in insert
+    opts = _format_optdict(kw)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/tkinter/ttk.py", line 54, in _format_optdict
+    opts.append(_format_optvalue(value, script))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/tkinter/ttk.py", line 39, in _format_optvalue
+    value = _join(value)
+            ^^^^^^^^^^^^
+RecursionError: maximum recursion depth exceeded
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/tkinter/__init__.py", line 1967, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 118, in <lambda>
+    ttk.Button(date_frame, text="📅", command=lambda: self._open_calendar_popup(self.rate_date_var)).pack(side=tk.LEFT, padx=5)
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 156, in _open_calendar_popup
+    top = Toplevel(self)
+          ^^^^^^^^
+NameError: name 'Toplevel' is not defined
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/tkinter/__init__.py", line 1967, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 118, in <lambda>
+    ttk.Button(date_frame, text="📅", command=lambda: self._open_calendar_popup(self.rate_date_var)).pack(side=tk.LEFT, padx=5)
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 156, in _open_calendar_popup
+    top = Toplevel(self)
+          ^^^^^^^^
+NameError: name 'Toplevel' is not defined
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/tkinter/__init__.py", line 1967, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 118, in <lambda>
+    ttk.Button(date_frame, text="📅", command=lambda: self._open_calendar_popup(self.rate_date_var)).pack(side=tk.LEFT, padx=5)
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 156, in _open_calendar_popup
+    top = Toplevel(self)
+          ^^^^^^^^
+NameError: name 'Toplevel' is not defined
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/tkinter/__init__.py", line 1967, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 118, in <lambda>
+    ttk.Button(date_frame, text="📅", command=lambda: self._open_calendar_popup(self.rate_date_var)).pack(side=tk.LEFT, padx=5)
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 156, in _open_calendar_popup
+    top = Toplevel(self)
+          ^^^^^^^^
+NameError: name 'Toplevel' is not defined
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/tkinter/__init__.py", line 1967, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 118, in <lambda>
+    ttk.Button(date_frame, text="📅", command=lambda: self._open_calendar_popup(self.rate_date_var)).pack(side=tk.LEFT, padx=5)
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 156, in _open_calendar_popup
+    top = Toplevel(self)
+          ^^^^^^^^
+NameError: name 'Toplevel' is not defined
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/tkinter/__init__.py", line 1967, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 118, in <lambda>
+    ttk.Button(date_frame, text="📅", command=lambda: self._open_calendar_popup(self.rate_date_var)).pack(side=tk.LEFT, padx=5)
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 156, in _open_calendar_popup
+    top = Toplevel(self)
+          ^^^^^^^^
+NameError: name 'Toplevel' is not defined
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/tkinter/__init__.py", line 1967, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 118, in <lambda>
+    ttk.Button(date_frame, text="📅", command=lambda: self._open_calendar_popup(self.rate_date_var)).pack(side=tk.LEFT, padx=5)
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 156, in _open_calendar_popup
+    top = Toplevel(self)
+          ^^^^^^^^
+NameError: name 'Toplevel' is not defined
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/tkinter/__init__.py", line 1967, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 118, in <lambda>
+    ttk.Button(date_frame, text="📅", command=lambda: self._open_calendar_popup(self.rate_date_var)).pack(side=tk.LEFT, padx=5)
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 156, in _open_calendar_popup
+    top = Toplevel(self)
+          ^^^^^^^^
+NameError: name 'Toplevel' is not defined
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/tkinter/__init__.py", line 1967, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 118, in <lambda>
+    ttk.Button(date_frame, text="📅", command=lambda: self._open_calendar_popup(self.rate_date_var)).pack(side=tk.LEFT, padx=5)
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 156, in _open_calendar_popup
+    top = Toplevel(self)
+          ^^^^^^^^
+NameError: name 'Toplevel' is not defined
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/tkinter/__init__.py", line 1967, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 118, in <lambda>
+    ttk.Button(date_frame, text="📅", command=lambda: self._open_calendar_popup(self.rate_date_var)).pack(side=tk.LEFT, padx=5)
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 156, in _open_calendar_popup
+    top = Toplevel(self)
+          ^^^^^^^^
+NameError: name 'Toplevel' is not defined
+Exception in Tkinter callback
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/tkinter/__init__.py", line 1967, in __call__
+    return self.func(*args)
+           ^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 118, in <lambda>
+    ttk.Button(date_frame, text="📅", command=lambda: self._open_calendar_popup(self.rate_date_var)).pack(side=tk.LEFT, padx=5)
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zohra/Desktop/chicken_biller/chicken_app.py", line 156, in _open_calendar_popup
+    top = Toplevel(self)
+          ^^^^^^^^
+NameError: name 'Toplevel' is not defined
+
+
